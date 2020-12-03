@@ -22,11 +22,8 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 column_1, column_2 = st.beta_columns(2)
-if st.sidebar.checkbox(label='Enable Mobile View?'):
-    year = st.sidebar.radio(label="Academic Year:", options=(
-        '1st Year', '2nd Year', '3rd Year', '4th Year'))
-else:
-    year = st.sidebar.selectbox(label="Academic Year:", options=(
+
+year = st.sidebar.selectbox(label="Academic Year:", options=(
         '1st Year', '2nd Year', '3rd Year', '4th Year'))
 
 mark_dict = {'A+ | 4.00': 4,
