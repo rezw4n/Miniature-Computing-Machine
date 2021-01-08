@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 streamlit==0.72.0
-=======
-streamlit==0.72.0
->>>>>>> origin
+
