@@ -16,6 +16,12 @@ hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
+            .css-1aumxhk {
+                padding: 0rem 1rem;
+            }
+            .css-hx4lkt {
+                padding: 5rem 1rem 5rem;
+            }
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
