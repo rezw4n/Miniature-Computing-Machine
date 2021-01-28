@@ -133,7 +133,7 @@ def calculate(credit_hours, course_marks):
 st.markdown('---')
 
 result = calculate(credit_hours, course_marks)
-st.title(f"You CGPA for {year} is {result}")
+st.title(f"Your CGPA for {year} is {result}")
 
 st.markdown('---')
 
