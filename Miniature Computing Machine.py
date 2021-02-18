@@ -46,18 +46,18 @@ if year == '1st Year' and faculty == 'Science':
                'Introduction to Physical Geography and Environment': 2,
                'Introduction to Human Geography and Environment': 2,
                'Fundamentals of Chemistry in Geography and Environment': 2,
-               'Fundamentals of English Language': 2, 'Fundamentals of Cartography and Map Projection': 2,
+               'Fundamentals of English Language': 2, 'Fundamentals of Cartography and Map Projection': 3,
                'Introduction to Computer in Geography and Environment': 2, 'Topographic Surveying': 2,
-               'Introduction to Research and Field Studies': 2, 'Viva': 2, 'Geology': 4, 'Introduction to Soil': 4}
+               'Introduction to Research and Field Studies': 2, 'Viva': 1, 'Geology': 4, 'Introduction to Soil': 4}
 
 elif year == '1st Year' and faculty == 'Arts':
     courses = {'Introduction to Geography and Environment': 2, 'Region and World Regional Pattern': 2,
                'Introduction to Physical Geography and Environment': 2,
                'Introduction to Human Geography and Environment': 2,
                'Fundamentals of Chemistry in Geography and Environment': 2,
-               'Fundamentals of English Language': 2, 'Fundamentals of Cartography and Map Projection': 2,
+               'Fundamentals of English Language': 2, 'Fundamentals of Cartography and Map Projection': 3,
                'Introduction to Computer in Geography and Environment': 2, 'Topographic Surveying': 2,
-               'Introduction to Research and Field Studies': 2, 'Viva': 2, 'Sociology Part I': 4,
+               'Introduction to Research and Field Studies': 2, 'Viva': 1, 'Sociology Part I': 4,
                'Introduction to Psychology': 4}
 
 elif year == '2nd Year' and faculty == 'Science':
