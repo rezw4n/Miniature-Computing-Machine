@@ -7,7 +7,8 @@ st.set_page_config(page_title="Miniature Computing Machine",
 
 st.title('Miniature Computing Machine for the Humans of GEN, DU')
 
-st.sidebar.subheader('Department of Geography and Environment, University of Dhaka')
+st.sidebar.subheader(
+    'Department of Geography and Environment, University of Dhaka')
 
 faculty = st.sidebar.radio(label="Faculty:", options=('Science', 'Arts'))
 css_style = """
@@ -24,7 +25,7 @@ css_style = """
             """
 st.markdown(css_style, unsafe_allow_html=True)
 
-column_1, column_2 = st.beta_columns(2)
+column_1, column_2 = st.columns(2)
 
 year = st.sidebar.selectbox(label="Academic Year:", options=(
     '1st Year', '2nd Year', '3rd Year', '4th Year'))
@@ -97,7 +98,8 @@ elif year == '4th Year':
 
 st.sidebar.text('\n')
 
-st.sidebar.latex(r'''CGPA = \frac{\sum(Grades \times Credits)}{\sum Credits}''')
+st.sidebar.latex(
+    r'''CGPA = \frac{\sum(Grades \times Credits)}{\sum Credits}''')
 
 st.sidebar.text('\n')
 
@@ -126,7 +128,7 @@ credit_hours = [value for value in courses.values()]
 
 def calculate(credit_hours, course_marks):
     total_point = sum([credit_hours * course_marks for credit_hours,
-                                                       course_marks in zip(credit_hours, course_marks)])
+                       course_marks in zip(credit_hours, course_marks)])
     return round(total_point / sum(credit_hours), 2)
 
 
@@ -138,9 +140,9 @@ st.title(f"Your CGPA for {year} is {result}")
 st.markdown('---')
 
 average_gpa = []
-with st.beta_expander(label="Calculate Cumulative Grade Point Average", expanded=False):
+with st.expander(label="Calculate Cumulative Grade Point Average", expanded=False):
     st.text('Enter Your GPA for Each Year')
-    column_1, column_2, column_3, column_4 = st.beta_columns(4)
+    column_1, column_2, column_3, column_4 = st.columns(4)
     with column_1:
         gpa = st.number_input(label='1st Year', min_value=0.00, max_value=4.00)
         average_gpa.append(gpa)
@@ -161,9 +163,9 @@ with st.beta_expander(label="Calculate Cumulative Grade Point Average", expanded
         except:
             st.warning('Please enter your CGPA first')
 
-with st.beta_expander(label="About this website..."):
+with st.expander(label="About this website..."):
     st.markdown(
-        """This website is created and maintained by [**Rezwan Ahmed**](mailto:rezwan490@gmail.com) for the undergraduate students of Department of Geography and Environment, University of Dhaka.  
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. All the course titles and their information were collected from the [official website](http://geoenv.du.ac.bd/undergraduate-overview/).  
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. If you want to contribute, feel free to open a [pull request!](https://github.com/rezw4n/miniature-computing-machine/pulls)  
+        """This website is created and maintained by [**Rezwan Ahmed**](mailto:rezwan490@gmail.com) for the undergraduate students of Department of Geography and Environment, University of Dhaka.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. All the course titles and their information were collected from the [official website](http://geoenv.du.ac.bd/undergraduate-overview/).
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. If you want to contribute, feel free to open a [pull request!](https://github.com/rezw4n/miniature-computing-machine/pulls)
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. If you find any bug on the website, or a mistake or want a new feature to be implemented please create an issue on [Github](https://github.com/rezw4n/miniature-computing-machine).""")
