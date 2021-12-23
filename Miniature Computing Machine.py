@@ -165,7 +165,9 @@ with st.expander(label="Calculate Cumulative Grade Point Average", expanded=Fals
 
 with st.expander(label="About this website..."):
     st.markdown(
-        """This website is created and maintained by [**Rezwan Ahmed**](mailto:rezwan490@gmail.com) for the undergraduate students of Department of Geography and Environment, University of Dhaka.
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. All the course titles and their information were collected from the [official website](http://geoenv.du.ac.bd/undergraduate-overview/).
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. If you want to contribute, feel free to open a [pull request!](https://github.com/rezw4n/miniature-computing-machine/pulls)
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. If you find any bug on the website, or a mistake or want a new feature to be implemented please create an issue on [Github](https://github.com/rezw4n/miniature-computing-machine).""")
+        """
+        This website is created and maintained by [**Rezwan Ahmed**](mailto:rezwan490@gmail.com) for the undergraduate students of Department of Geography and Environment, University of Dhaka.
+
+        1. All the course titles and their information were collected from the [official website](http://geoenv.du.ac.bd/undergraduate-overview/).
+        2. If you want to contribute, feel free to open a [pull request!](https://github.com/rezw4n/miniature-computing-machine/pulls)
+        3. If you find any bug on the website, or a mistake or want a new feature to be implemented please create an issue on [Github](https://github.com/rezw4n/miniature-computing-machine).""")
