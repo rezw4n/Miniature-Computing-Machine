@@ -15,12 +15,8 @@ css_style = """
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
-            .css-1aumxhk {
-                padding: 0rem 1rem;
-            }
-            .css-hx4lkt {
-                padding: 5rem 1rem 5rem;
-            }
+            #miniature-computing-machine-for-the-humans-of-gen-du{padding: 0rem 0px 1rem;}
+            #your-cgpa-for-1st-year-is-4-0{padding: 1.25rem 0px 1.25rem;}
             </style>
             """
 st.markdown(css_style, unsafe_allow_html=True)
@@ -132,12 +128,9 @@ def calculate(credit_hours, course_marks):
     return round(total_point / sum(credit_hours), 2)
 
 
-st.markdown('---')
-
 result = calculate(credit_hours, course_marks)
 st.title(f"Your CGPA for {year} is {result}")
 
-st.markdown('---')
 
 average_gpa = []
 with st.expander(label="Calculate Cumulative Grade Point Average", expanded=False):
